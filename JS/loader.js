@@ -16,7 +16,7 @@ function roll()
     dice[first].style.display = "inline";
     dice[6+second].style.display = "inline";
 
-    numb.innerHTML = (first+1) + " and " + (second+1);
+    numb.innerHTML = (first+1) + " and " + (second+1) + " with sum = " + (first+1 + second+1);
 }
 
 function getRandomInt(max)
