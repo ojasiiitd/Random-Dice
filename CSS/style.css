@@ -1,0 +1,47 @@
+*
+{
+    padding: 0px;
+    margin: 0px;
+}
+
+.wrapper
+{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(233, 240, 134);
+}
+
+.title
+{
+    padding: 90px;
+    font-size: 70px;
+}
+
+.button
+{
+    height: 90px;
+    width: 220px;
+}
+
+.dice
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    display: inline-block;
+    font-size: 100px;
+    margin-top: 100px;
+}
+
+.die
+{
+    display: none;
+}
+
+.title-1
+{
+    padding: 20px;
+    font-size: 50px;
+    font-weight: 600;
+}
