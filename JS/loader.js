@@ -2,6 +2,7 @@ var dice = document.querySelectorAll("i.die");
 var numb = document.querySelector("p.numbers");
 var generate = document.querySelector(".button")
 
+window.addEventListener("keydown" , enterRoll);
 generate.addEventListener("click" , roll);
 
 function roll()
@@ -11,12 +12,16 @@ function roll()
 
     var first = getRandomInt(6) , second = getRandomInt(6);
 
-    console.log(first + " " + second)
-
     dice[first].style.display = "inline";
     dice[6+second].style.display = "inline";
 
-    numb.innerHTML = (first+1) + " and " + (second+1) + " with sum = " + (first+1 + second+1);
+    numb.innerHTML = (first+1) + " and " + (second+1) + " <br>Sum = " + (first+1 + second+1);
+}
+
+function enterRoll()
+{
+    if(event.keyCode === 13)
+        generate.click();
 }
 
 function getRandomInt(max)
