@@ -13,12 +13,12 @@
             <h1 class="title">
                 <center>
                     <i class="fas fa-dice"></i>
-                    The Random Dice Generator
+                    <a class="has-text-dark" href="index.html">The Random Dice Generator</a>
                     <i class="fas fa-dice"></i>
                 </center>
             </h1>
             <center>
-                <button class="button is-large is-primary is-rounded has-text-dark is-size-3">
+                <button class="button gamble is-large is-primary is-rounded has-text-dark is-size-3">
                     <b>Gamble</b>
                 </button>
             </center>
@@ -41,6 +41,16 @@
             </div>
             <p align="center" class="subtitle"><b>Your Numbers Are : </b></p>
             <p align="center" class="numbers title-1 has-text-danger"> - </p>
+            
+            <div class="column is-2 is-offset-10">
+                <button class="button is-danger is-medium is-outlined" id="history">Check History</button>
+            </div>
+            <div class="column is-6 is-offset-3">
+                <div class="notification is-danger" id="showHis">
+                    <button class="delete"></button>
+                    <span class="notif is-size-3"></span>
+                </div>
+            </div>
         </div>
 
         <script src="JS/loader.js"></script>
